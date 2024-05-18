@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Demo</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Features Demonstration</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Form Validation</h2>
+            <p>HTML5 provides built-in form validation features, such as validating email addresses. Try submitting the form without filling it correctly:</p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section>
+            <h2>2. Multimedia Support</h2>
+            <p>HTML5 supports native multimedia elements like video. Here's an example of an embedded video:</p>
+            <video controls>
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>3. Canvas Element</h2>
+            <p>The <code>&lt;canvas&gt;</code> element allows for dynamic, scriptable rendering of 2D shapes. Here's an example that draws a red rectangle:</p>
+            <canvas id="myCanvas" width="200" height="100">
+                Your browser does not support the canvas element.
+            </canvas>
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 200, 100);
+            </script>
+        </section>
+        <section>
+            <h2>Explanation:</h2>
+            <ol>
+                <li>
+                    <strong>Form Validation:</strong>
+                    <ul>
+                        <li>The form includes an input field for an email address using the 
+                            &lt;input type="email"&gt; tag. This ensures that the user must enter a valid email address format before the form can be submitted.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Multimedia Support:</strong>
+                    <ul>
+                        <li>The &lt;video&gt; element is used to embed a video on the webpage. Users can play, pause, and control the video without needing external plug</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Canvas Element:</strong>
+                    <ul>
+                        <li>The &lt;canvas&gt; element is used for drawing graphics on the fly. A simple script is included to draw a red rectangle on the canvas.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HTML5 Features Demo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>improving the accessibility of html</title>
+</head>
+<body>
+    <h1>Three ways which help us in improving the accessibility in html</h1>
+    <ol>
+        <li>
+            <strong>Using semantic HTML elements</strong>
+            <ul>
+                <li>properly structured headings, use of 'h1' to 'h6' heading tags. The 'h1' tag represents 
+                    the main heading of the page, 'h2' represents the subsections, and so on.
+                </li>
+                <li>landmark elements like 'header', 'nav', 'main', 'article', 'section', and 'footer'.</li>
+                <li>use of 'label' element with 'for' attribute in form elements</li>
+            </ul>    
+        </li>
+        <li>
+            <strong>Providing text alternatives for non-text content</strong>
+            <ul>
+                <li>'alt' attributes for images. This description of alternative text convey the purpose 
+                    and content of the image
+                </li>
+                <li>
+                    caption for videos: Provide captions for all video content to ensure it's accessible to
+                     users who are deaf or hard of hearing. Captions should be synchronized with the video.
+                </li>
+                <li>
+                    Transcripts for audio content: Offer text transcripts for audio files so users can read
+                     the content if they cannot hear it.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>ensuring keyboard accessibility</strong>
+            <ul>
+                <li>Focusable elements: Ensure all interactive elements (links, buttons, form controls) can be accessed
+                     using the Tab key. Use the tabindex attribute to manage the tab order if necessary.</li>
+                <li>
+                    Keyboard-friendly navigation: Use standard HTML elements for interactive controls, like 
+                    'button' for clickable actions and 'a' for links. Avoid using div or span for these 
+                    purposes, as they do not natively support keyboard interactions.
+                </li>
+                <li>
+                    Focus management: Provide clear visual focus indicators to show which element is 
+                    currently focused. Customize the focus style using CSS if necessary.
+                </li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
